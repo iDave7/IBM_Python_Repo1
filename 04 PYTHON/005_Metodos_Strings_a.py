@@ -16,8 +16,9 @@ print("Esta frase " + "termina aquí.")
 a = "uno"
 b = "dos"
 c = a + b		 # c es "unodos"
-c = a * 3 		 # c es "unounouno"
-
+d = a * 3 		 # d es "unounouno"
+print(c)
+print(d)
 
 #----------------------------------------------
 
@@ -48,7 +49,7 @@ print(s_texto5.rfind('desde'))
 s_texto6 = "6"
 print(s_texto6.isdigit())
 
-#   isalum(): Devuelve un boolean, Devuelve verdadero si todos los caracteres de la cadena son numéricos y hay al menos un carácter. En caso contrario, devuelve falso.
+#   isalum(): Devuelve un boolean, Devuelve verdadero si todos los caracteres de la cadena son alfanuméricos y hay al menos un carácter. En caso contrario, devuelve falso.
 s_texto7 = "9857654gf7"
 print(s_texto7.isalnum())
 

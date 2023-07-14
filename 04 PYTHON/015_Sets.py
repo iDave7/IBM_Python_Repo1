@@ -138,8 +138,41 @@ print(set1)
 #   Tanto union() como update() excluirán cualquier elemento duplicado.
 
 
+# Métodos de los sets
 
+# add() -> Añade un elemento al set 
 
+# clear() -> Borra todos los elementos del set
+
+# copy()  -> Devuelve una copia del set 
+
+# difference() -> Devuelve un set que contiene las diferencias entre dos o más sets
+
+# difference_update()  -> Borra los elementos del set que están incluidos en otro 
+
+# discard() -> Borra el elemento especificado
+
+# intersection() -> Devuelve un set que es la intersección resultante de otros dos
+
+# intersection_update() -> Borra los elementos del set que no están presentes en otro
+
+# isdisjoint() -> Informa si dos sets tienen una intersección o no
+
+# issubset() -> Informa si otro set contiene a este set o no
+
+# issuperset() -> Informa si este set contiene a otro set o no
+
+# pop() -> Borra un elemento del set, no podremos elegir cuál.
+
+# remove() -> Borra un elemento específico 
+
+# symmetric_difference() -> Devuelve un set con las diferencias simétricas de dos sets
+
+# symmetric_difference_update() -> Inserta las diferencias simétricas de este set y otro
+
+# union() -> Devuelve un set con la unión de dos sets
+
+# update() -> Actualiza el set con la unión de este set y otros
 
 
 

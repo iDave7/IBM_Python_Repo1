@@ -227,7 +227,7 @@ result = suma(1, 2)
 #---------------------------------------
 # VALORES POR DEFECTO
 #---------------------------------------
-# esta es una función básica de suma con balores predeterminados
+# esta es una función básica de suma con valores predeterminados
 def suma(a, b=3):
   return a + b
 
@@ -246,7 +246,7 @@ def sumar(a:int = 0, b:int = 0) -> int:
     resultado = sumar()
 #print(f'Resultado sumar: {resultado}')
 print(f'Resultado sumar: {sumar(45, 654)}')
-#uanque le hemos dicho el tipo de los parámetros no estamos obligados a cumplirlo.
+#aunque le hemos dicho el tipo de los parámetros no estamos obligados a cumplirlo.
 print(f'Resultado sumar: {sumar("aNGEL", "Garcia")}')
 
 

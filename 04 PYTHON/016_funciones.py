@@ -122,7 +122,7 @@ holaConNombre("Angel")  # llamada a la función, 'Hola Angel!' se muestra en la 
 def imprimir(precio, iva = 1.21): 
     print(precio * iva)
 
-imprimir(300, 1.08)
+imprimir(300, 1.08) # Se pueden sobreescribir
 
 #   Funciones con argumentos variables
 #   Me crea una tupla de nombre "otros" 
@@ -330,7 +330,7 @@ def imprimir_numero_recursivo(numero):
     elif numero < 0:
         print('Valor incorrecto...')
 
-imprimir_numero_recursivo(5000000)
+imprimir_numero_recursivo(50)
 
 #---------------------------------------
 

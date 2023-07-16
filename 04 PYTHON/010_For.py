@@ -120,3 +120,68 @@ for x in frutas:
 
 for x in [0, 1, 2]:  
   pass
+
+# Suma de elementos de una lista
+a = 0
+for x in [1, 2, 3, 4]:
+    a += x
+print(a)
+
+# Recorrer un diccionario
+keys = ['Nombre', 'Apellidos', 'Edad']
+values = ['David', 'López Morales', 40]
+
+d = dict(zip(keys,values)) # Creamos el diccionario
+
+for k in d:
+    info = '{}: {}'.format(k, d[k]) # Texto formateado con claves y valores
+    print(info)
+
+# Asignación en tuplas
+a, b = (3, 4)
+print(a, b)
+
+# --
+
+t = [(1, 2), (3, 4), (5, 6)]
+for x,y in t:
+    print(x + y, end=" ")
+
+# Recorrer varias listas simultáneamente
+
+import random
+letras = list('abcdefghijklmnopqrstuvwxyz')
+
+# creamos 3 sublistas
+l1 = letras[:8]
+l2 = letras[8:16]
+l3 = letras[16:]
+
+# barajamos cada trozo
+random.shuffle(l1)
+random.shuffle(l2)
+random.shuffle(l3)
+
+for a, b, c in zip(l1, l2, l3):
+    print(a + b + c, end=' ')
+
+# Búsqueda de índices de los elementos de una lista
+
+import random
+letras = list('abcdefghijklmnopqrstuvwxyz')
+vocales = 'aeiou'
+
+random.shuffle(letras)
+print(''.join(letras))
+
+for i, letra in enumerate(letras):
+    if letra in vocales:
+        print('{} en la posición {}'.format(letra, i))
+
+# Ejemplo de enumerate (hay que envolverlo en list() o recorrerlo con un for)
+letras = list('abcdefghijklmnopqrstuvwxyz')
+abcde = sorted(letras)[:5]  
+
+list(enumerate(abcde)) # Devuelve la secuencia con sus índices
+
+list(enumerate(abcde, 10)) # Devuelve la secuencia con sus índices indicándole desde qué índice empezar

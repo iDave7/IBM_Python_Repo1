@@ -49,10 +49,45 @@ while num < 6:
     break
   num += 1
   
+# Otro ejemplo de sentencia break
+
+a = 5
+while a:
+   print(a, end=' ')
+   a-=1
+   if a==2:
+       break
+
+print('\nFuera del bucle')
+print('Valor de "a": {}'.format(a))
 
 
 
+# Sentencia continue: nos permite interrumpir la iteración actual y saltar una vuelta de bucle
 
+a = 7
+while bool(a):
+   a-=1
+   if a % 2 == 0:
+      continue
+   print(a, end='\n')
+print('\nFuera del bucle')
 
+# Sentencia pass: no hace absolutamente nada. Es un marcador de posición para dejar bucles vacíos.
+a = 5 
+while a:
+   pass # Presiona Ctrl-C en Win o Interrumpir en la consola para abortar la ejecución
 
+# Bloques else al finalizar bucles
+# evaluamos si un número es primo o no 
 
+a = int(input("Introduce un número entero"))
+b = a // 2
+while b>1:
+   if a % b == 0:
+      print('{1} es factor de {0}'.format(b,a))
+      break
+   
+else:
+   print('{} es primo'.format(a))
+print('\nFuera del bucle')
